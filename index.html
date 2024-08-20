@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body onload="fetchPokenmonType()">
+
+    <div class="heading">
+        <img src="images/pikachu.gif" alt="" class="pikachu animate__animated animate__zoomInLeft">
+        <img src="images/Pokédex_logo.png" alt="" id="logo" class=" animate__animated animate__zoomInDown animate__delay-0.5s">
+        <img src="images/charmander.gif" alt="" width="180" class="char animate__animated animate__zoomInRight">
+    </div>
+    <div class="input animate__animated animate__fadeIn">
+        <select id="pokemon-types">
+            <option value="" selected disabled hidden>Choose the type..</option>
+        </select>
+         <a href="#" onclick="fetchPokemonOnType()"><span>Filter by type</span></a>
+        <input type="text" id="search" placeholder="Search the pokemon..">
+        <button id="reset"><i class="fa-solid fa-rotate"></i></button>
+    </div>
+    <div id="container">
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/0e5f740fb1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
